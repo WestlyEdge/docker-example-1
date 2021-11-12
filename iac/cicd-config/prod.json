@@ -1,0 +1,25 @@
+{
+  "Parameters" : {
+    "ClusterName" : "kelly-ecs-cluster",
+    "EC2ImageId" : "ami-0102692edc680b5b0",
+    "EC2InstanceType" : "t2.medium",
+    "ServiceName" : "kelly-ecs-service",
+    "RoleName" : "kelly-ecs-role",
+    "KeyPairName" : "wes-keypair",
+    "ContainerImage" : "kellyedge/web-app:latest",
+    "LaunchConfigurationName" : "kelly-launch-config1",
+    "SubnetIds" : "subnet-032939daa62aaf947, subnet-05b2f8ab1751349da, subnet-0e873b1762c601a23",
+    "AutoScalingGroupMinSize" : "2",
+    "AutoScalingGroupMaxSize" : "2",
+    "VpcId" : "vpc-04684fa84fec7b6c8",
+    "ContainerServiceDesiredCount" : "2",
+    "ALBListenerPort" : "80",
+    "ALBListenerProtocol" : "HTTP",
+    "ECSHostPort" : "80",
+    "ECSContainerPort" : "80",
+    "ECSTaskMemory" : "512"
+  },
+  "Tags" : {
+    "Env" : "Prod"
+  }
+}
